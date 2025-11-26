@@ -1,0 +1,77 @@
+body {
+  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0097a7 !important;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  color: #b2ebf2 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('img/water-bg.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 151, 167, 0.6);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0097a7;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #007c91;
+}
+
+/* Footer */
+footer {
+  background-color: #0097a7;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+/* Form */
+form .form-control:focus {
+  border-color: #0097a7;
+  box-shadow: 0 0 5px rgba(0, 151, 167, 0.4);
+}
+
+/* Scroll Animation */
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+[data-scroll].active {
+  opacity: 1;
+  transform: translateY(0);
+}
